@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  - component: {fileID: 8200000}
+  - component: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: GameController-c#
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1002 &100001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: 0, y: 0.25, z: 6.0909023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1002 &400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7fc04a12b3f6a4f48bf60241b79c9cb1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 20
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1002 &8200001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1cef033afda7f488096b5d55ae6077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelAdvanceSfx: {fileID: 8300000, guid: 7fc04a12b3f6a4f48bf60241b79c9cb1, type: 3}
+  createDoor: 1
+  doorArrayLeft:
+  - {fileID: 100000, guid: 2e38c8b0f53a13c489ca2deb93441977, type: 2}
+  - {fileID: 100000, guid: a6a9c9b7fa9fe634a854f35a16657466, type: 2}
+  - {fileID: 100000, guid: d825df25fbf28534fa6f71de352a6ce4, type: 2}
+  doorArrayRight:
+  - {fileID: 100000, guid: e24878a060d3b9e4d985d762a8e39dff, type: 2}
+  - {fileID: 100000, guid: 60768d3de1233804da8f93812001a005, type: 2}
+  - {fileID: 100000, guid: b8e20eef32d2ac8469b51b989a7fccf7, type: 2}
+  TwinDoorArray:
+  - {fileID: 100000, guid: 1df8a1847cc24a442bbb5ed4421cf9a0, type: 2}
+  - {fileID: 100000, guid: 579c06cd42d271341bfa4453738c84b4, type: 2}
+  createLaser: 1
+  laserArray:
+  - {fileID: 100000, guid: bd40c85d3ddcdad41a6a887698644021, type: 2}
+  createDecal: 1
+  decalArray:
+  - {fileID: 100000, guid: bfa07526ac07455438b3366ed11906f4, type: 2}
+  - {fileID: 100000, guid: ee18c845e8655634e9dedfa9c4213457, type: 2}
+  - {fileID: 100000, guid: 0fec637bd24e68a43af15a4ba0812ccc, type: 2}
+  - {fileID: 100000, guid: ddd4b22e4fb3b3a49a8656819aa39e6a, type: 2}
+  - {fileID: 100000, guid: fc666bfdba53545489d2aaec40d42dc3, type: 2}
+  - {fileID: 100000, guid: 69719aa4175985041a0f4ec21841a6b9, type: 2}
+  - {fileID: 100000, guid: 25a18faaa866e874da56a559c0d82927, type: 2}
+  createVisualLayer: 1
+  visualArrays:
+  - {fileID: 100000, guid: 1692db976c24b974aa5a292d33c42214, type: 2}
+  - {fileID: 100000, guid: e3a282724dc9aab4dbaefb0e17ae9aae, type: 2}
+  - {fileID: 100000, guid: cf8937eb4a64ac143aac82a23e125d40, type: 2}
+  foregroundPlane: {fileID: 0}
+  gameOverPlane: {fileID: 0}
+  gameOverSfx: {fileID: 8300000, guid: 5a33e7007c847014ab758c073cb5f3fe, type: 3}
+  player: {fileID: 0}
+--- !u!1002 &11400001
+EditorExtensionImpl:
+  serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191d63cf81b57de49b8a4fbdf4ce98ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helpers:
+  - {fileID: 100000, guid: 1b1898dbfb2b9fd4cbd22c7878732b22, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+--- !u!1002 &100100001
+EditorExtensionImpl:
+  serializedVersion: 6
